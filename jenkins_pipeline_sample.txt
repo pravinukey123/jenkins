@@ -1,0 +1,29 @@
+Basic sample of pipeline in node 
+
+node name : node-1
+output:  create dir_1
+add plugins : pipeline, pipeline sage view , pipeline graph analysis,
+
+ create job
+
+1)create item ------item name------pipeline-----ok
+2) select pipeline -----pipeline script
+
+pipeline {
+    agent { label 'node-1' }
+
+    stages {
+        stage('Hello') {
+            steps {
+                sh 'mkdir dir_1'
+            }
+        }
+    }
+}
+
+
+3) save 
+4) build now
+
+now can check o/p in node as well as console o/p
+
